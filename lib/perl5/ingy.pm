@@ -13,7 +13,7 @@ use base 'perl5::base';
 use perl5 0.01 ();
 use IO::All 0.41 ();
 
-our $VERSION = '0.10';
+our $VERSION = '0.01';
 
 sub import { goto &perl5::base::import }
 
