@@ -10,10 +10,10 @@
 package perl5::ingy;
 use 5.010;
 use base 'perl5::base';
-use perl5 0.01 ();
+use perl5 0.03 ();
 use IO::All 0.41 ();
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub import { goto &perl5::base::import }
 

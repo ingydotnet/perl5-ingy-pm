@@ -1,4 +1,9 @@
 ---
+version: 0.02
+date:    Tue Jun  7 17:21:37 EST 2011
+changes:
+- Rerelease now that perl5 is indexed.
+---
 version: 0.01
 date:    Sun Jun  5 23:33:31 EST 2011
 changes:
