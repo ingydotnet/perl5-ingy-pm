@@ -8,15 +8,20 @@ DESCRIPTION
         use strict;
         use warnings;
         use IO::All;
+        use YAML::XS;
+        use Cwd qw[abs_path cwd];
+        use File::Spec;
+        use Capture::Tiny ':all';
+        ;use XXX -with => 'YAML::XS';
 
     This is an early release. More modules will be added as this framework
     matures.
 
 STATUS
     This module is brand new. Don't use it. I wouldn't if I were you. But
-    I'm not you. I'm Ingy. This module is name after me. You are not Ingy.
-    This module is not named after you.
-    iykwimaittydrotflmaowtfbbqftwkthxbai.
+    I'm not you. I use it. But I'm Ingy. This module is name after me. You
+    are not Ingy. This module is not named after you.
+    iykwimaittydrotflmaowtfbbqstfuftwkthxbai.
 
 SEE ALSO
     *   perl5

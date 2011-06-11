@@ -13,13 +13,18 @@ use base 'perl5::base';
 use perl5 0.03 ();
 use IO::All 0.41 ();
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub import { goto &perl5::base::import }
 
 sub use_module_code_section {
     return <<'...';
 use IO::All;
+use YAML::XS;
+use Cwd qw[abs_path cwd];
+use File::Spec;
+use Capture::Tiny ':all';
+;use XXX -with => 'YAML::XS';
 ...
 }
 
@@ -37,6 +42,11 @@ Using this module is the same as:
     use strict;
     use warnings;
     use IO::All;
+    use YAML::XS;
+    use Cwd qw[abs_path cwd];
+    use File::Spec;
+    use Capture::Tiny ':all';
+    ;use XXX -with => 'YAML::XS';
 
 This is an early release. More modules will be added as this framework
 matures.
@@ -44,5 +54,5 @@ matures.
 =head1 STATUS
 
 This module is brand new. Don't use it. I wouldn't if I were you. But I'm not
-you. I'm Ingy. This module is name after me. You are not Ingy. This module is
-not named after you. iykwimaittydrotflmaowtfbbqftwkthxbai.
+you. I use it. But I'm Ingy. This module is name after me. You are not Ingy.
+This module is not named after you. iykwimaittydrotflmaowtfbbqstfuftwkthxbai.

@@ -1,4 +1,9 @@
 ---
+version: 0.03
+date:    Sat Jun 11 16:35:24 EST 2011
+changes:
+- Added YAML::XS Cwd File::Spec Capture::Tiny XXX
+---
 version: 0.02
 date:    Tue Jun  7 17:21:37 EST 2011
 changes:
