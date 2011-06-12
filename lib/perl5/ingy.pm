@@ -7,24 +7,20 @@
 # see:
 # - perl5
 
-package perl5::ingy;
 use 5.010;
-use base 'perl5::base';
-use perl5 0.03 ();
-use IO::All 0.41 ();
+package perl5::ingy;
 
-our $VERSION = '0.03';
+use perl5 0.04;
 
-sub import { goto &perl5::base::import }
+our $VERSION = '0.04';
+our @ISA = qw[perl5];
 
-sub use_module_code_section {
+sub code {
     return <<'...';
-use IO::All;
-use YAML::XS;
-use Cwd qw[abs_path cwd];
-use File::Spec;
-use Capture::Tiny ':all';
-;use XXX -with => 'YAML::XS';
+use IO::All 0.41;
+use YAML::XS 0.35;
+use Capture::Tiny 0.10 ':all';
+;use XXX 0.17 -with => 'YAML::XS';
 ...
 }
 
@@ -43,8 +39,6 @@ Using this module is the same as:
     use warnings;
     use IO::All;
     use YAML::XS;
-    use Cwd qw[abs_path cwd];
-    use File::Spec;
     use Capture::Tiny ':all';
     ;use XXX -with => 'YAML::XS';
 

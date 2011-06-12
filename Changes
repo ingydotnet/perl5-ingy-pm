@@ -1,4 +1,10 @@
 ---
+version: 0.04
+date:    Sun Jun 12 13:45:31 EST 2011
+changes:
+- Switch to new perl5 API
+- Remove Cwd File::Spec
+---
 version: 0.03
 date:    Sat Jun 11 16:35:24 EST 2011
 changes:
