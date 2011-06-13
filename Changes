@@ -1,4 +1,9 @@
 ---
+version: 0.05
+date:    Mon Jun 13 12:16:03 EST 2011
+changes:
+- Make sure XXX shows up as dependency
+---
 version: 0.04
 date:    Sun Jun 12 13:45:31 EST 2011
 changes:

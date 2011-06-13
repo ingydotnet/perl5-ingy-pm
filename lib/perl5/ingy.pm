@@ -12,15 +12,15 @@ package perl5::ingy;
 
 use perl5 0.04;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 our @ISA = qw[perl5];
 
 sub code {
     return <<'...';
 use IO::All 0.41;
 use YAML::XS 0.35;
-use Capture::Tiny 0.10 ':all';
-;use XXX 0.17 -with => 'YAML::XS';
+use Capture::Tiny 0.11 ':all';
+use XXX 0.17 -with => 'YAML::XS';
 ...
 }
 
@@ -40,7 +40,7 @@ Using this module is the same as:
     use IO::All;
     use YAML::XS;
     use Capture::Tiny ':all';
-    ;use XXX -with => 'YAML::XS';
+    use XXX -with => 'YAML::XS';
 
 This is an early release. More modules will be added as this framework
 matures.
