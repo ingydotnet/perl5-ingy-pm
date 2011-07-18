@@ -1,4 +1,9 @@
 ---
+version: 0.06
+date:    Sun Jul 17 22:56:47 PDT 2011
+changes:
+- Use new perl5 API
+---
 version: 0.05
 date:    Mon Jun 13 12:16:03 EST 2011
 changes:
