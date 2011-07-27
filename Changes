@@ -1,4 +1,9 @@
 ---
+version: 0.07
+date:    Wed Jul 27 11:12:32 CDT 2011
+changes:
+- Make module declare its dependencies
+---
 version: 0.06
 date:    Sun Jul 17 22:56:47 PDT 2011
 changes:

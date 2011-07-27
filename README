@@ -1,3 +1,6 @@
+NAME
+    perl5::ingy - Ingy's Favorite Perl 5 Feature Set
+
 SYNOPSIS
         use perl5-ingy;
 

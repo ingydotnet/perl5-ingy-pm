@@ -1,6 +1,6 @@
 ##
 # name: perl5::ingy
-# abstract: 
+# abstract: Ingy's Favorite Perl 5 Feature Set
 # author: Ingy döt Net <ingy@ingy.net>
 # license: perl
 # copyright: 2011
@@ -10,10 +10,18 @@
 use v5.10;
 package perl5::ingy;
 
-use perl5 0.06 ();
+use perl5 0.08 ();
 use base 'perl5';
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
+
+# For Module::Install
+my $requires = "
+use IO::All 0.43;
+use YAML::XS 0.35;
+use Capture::Tiny 0.11;
+use XXX 0.17;
+";
 
 use constant imports => (
     strict =>
