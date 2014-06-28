@@ -1,27 +1,8 @@
-##
-# name: perl5::ingy
-# abstract: Ingy's Favorite Perl 5 Feature Set
-# author: Ingy döt Net <ingy@ingy.net>
-# license: perl
-# copyright: 2011
-# see:
-# - perl5
-
-use v5.10;
 package perl5::ingy;
+our $VERSION = '0.08';
 
-use perl5 0.08 ();
+use perl5;
 use base 'perl5';
-
-our $VERSION = '0.07';
-
-# For Module::Install
-my $requires = "
-use IO::All 0.43;
-use YAML::XS 0.35;
-use Capture::Tiny 0.11;
-use XXX 0.17;
-";
 
 use constant imports => (
     strict =>
@@ -34,28 +15,3 @@ use constant imports => (
 );
 
 1;
-
-=head1 SYNOPSIS
-
-    use perl5-ingy;
-
-=head1 DESCRIPTION
-
-Using this module is the same as:
-
-    use 5.010;
-    use strict;
-    use warnings;
-    use IO::All;
-    use YAML::XS;
-    use Capture::Tiny ':all';
-    ;use XXX -with => 'YAML::XS';
-
-This is an early release. More modules will be added as this framework
-matures.
-
-=head1 STATUS
-
-This module is brand new. Don't use it. I wouldn't if I were you. But I'm not
-you. I use it. But I'm Ingy. This module is named after me. You are not Ingy.
-This module is not named after you. iykwimaittydrotflmaowtfbbqstfuftwkthxbai.

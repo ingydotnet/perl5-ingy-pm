@@ -1,0 +1,31 @@
+=meta: 0.0.1
+
+name: perl5-ingy
+version: 0.08
+abstract: Ingy's Favorite Perl 5 Feature Set
+homepage: https://metacpan.org/release/perl5-ingy
+
+license: perl
+copyright: 2011-2014. Ingy döt Net.
+author:
+  name: Ingy döt Net
+  email: ingy@ingy.net
+  github: ingydotnet
+  twitter: ingydotnet
+  freenode: ingy
+  homepage: http://ingy.net
+
+requires:
+  perl: 5.8.1
+  perl5: 0.10
+  IO::All: 0.43
+  YAML::XS: 0.35
+  Capture::Tiny: 0.11
+  XXX: 0.17
+
+devel:
+  git: git@github.org/ingydotnet/perl5-ingy-pm
+  irc: irc.freenode.net#ingy
+  bug: https://github.com/ingydotnet/perl5-ingy-pm/issues/
+
+=travis: perl
