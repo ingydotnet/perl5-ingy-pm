@@ -1,5 +1,5 @@
 package perl5::ingy;
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 use perl5;
 use base 'perl5';
