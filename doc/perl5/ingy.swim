@@ -3,6 +3,8 @@ perl5-ingy
 
 Ingy's Favorite Perl 5 Feature Set
 
+<badge travis coveralls ingydotnet/perl5-ingy-pm>
+
 = Synopsis
 
   use perl5-ingy;
