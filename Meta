@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: perl5-ingy
-version: 0.12
+version: 0.13
 abstract: Ingy's Favorite Perl 5 Feature Set
 homepage: https://metacpan.org/release/perl5-ingy
 language: perl
@@ -10,7 +10,7 @@ copyright: 2011-2014
 
 author:
   name: Ingy döt Net
-  email: ingy@ingy.net
+  email: ingy@cpan.org
   homepage: http://ingy.net
   github: ingydotnet
   twitter: ingydotnet
