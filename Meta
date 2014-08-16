@@ -1,7 +1,7 @@
 =meta: 0.0.1
 
 name: perl5-ingy
-version: 0.10
+version: 0.11
 abstract: Ingy's Favorite Perl 5 Feature Set
 homepage: https://metacpan.org/release/perl5-ingy
 
@@ -22,6 +22,10 @@ requires:
   YAML::XS: 0.35
   Capture::Tiny: 0.11
   XXX: 0.17
+
+test:
+  generate:
+    000-require-modules.t: true
 
 devel:
   git: https://github.com/ingydotnet/perl5-ingy-pm
